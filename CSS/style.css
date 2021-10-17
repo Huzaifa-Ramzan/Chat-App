@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    
+    background-color: #d3d3d3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    
+    
+}
+.col-12,.card-header,.card-footer{
+    background-color: #ffff;
+    border-radius: 12px;
+
+}
+.error-message{
+    color: #721c24;
+    background-color: #f8d7da;
+    display: none;
+    padding: 8px 10px;
+    border: 1px solid #f5c6cb;
+    
+}
+.padding{
+    padding: 8px 0 10px 0;
+}
+.feild{
+    position: relative;
+}
+i{
+    position: absolute;
+    right: 15px;
+    top: 60%;
+    transform: translateY(-20%);
+    cursor:pointer;
+    color: #ccc;
+}
+
+/*user Details*/
+.img{
+    object-fit: cover;
+    height: 100%;
+    width: 3rem;
+}
+ia{
+    padding: 11px 10px;
+    margin-right: 5px;
+    
+}
+.imge,img{
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+.colum{
+    padding: 8px 0;
+}
+small{
+    font-weight: bold;
+}
+.user .search{
+    margin: 12px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.user .search .text{
+    font-size: 18px;
+}
+.user .search input{
+    position: absolute;
+    height: 42px;
+    width: 85%;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.user .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.user .button{
+    margin-right: 11px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 17px;
+    border-radius: 0 5px 5px 0;   
+    transition: all 0.2s ease; 
+    cursor: pointer;
+}
+.user .button.active{
+    
+    color: #ffff;
+    background: #333;
+   
+}
+.user .button.active .button::before{
+    content: \f00d;
+}
+.chat-body{
+    max-height: 371px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.chat-body::-webkit-scrollbar{
+    display: none;
+    
+}
+
+/* we use this in offline*/
+.detail p{
+    padding: 8px 16px;
+}
+.chat-outgoing .detail p{
+    border-radius: 20px 20px 0 20px;
+}
+.dot{
+    color: #008000;
+}
+.dot .offline{
+color: #ccc;    
+}
+/*chat */
+.chat-outgoing .detail{
+    margin-left: auto;
+    max-width: 90%;
+}
+.chat-incoming img{
+    height: 35px;
+    width: 35px;
+}
+.chat-incoming p{
+    background-color: #ffff;
+}
+.chat-incoming .detail{
+    margin-right: auto;
+    max-width: 80%;
+}
+.chat-incoming .detail p{
+    border-radius: 20px 20px 20px 0px;
+}
+im{
+    font-size: 4.3rem;
+}
